@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hash Generator Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Hash Generator Tool</h1>
+
+    <p class="subtitle">Enter text to generate hash</p>
+
+    <input type="text" id="textInput" placeholder="Enter text here">
+
+    <select id="algorithm">
+        <option value="both">Generate Both</option>
+        <option value="sha256">SHA-256</option>
+        <option value="md5">MD5</option>
+    </select>
+
+    <div class="buttons">
+        <button class="generateBtn" onclick="generateHash()">Generate Hash</button>
+        <button class="clearBtn" onclick="clearAll()">Clear</button>
+    </div>
+
+    <div class="resultBox">
+
+        <h3>SHA-256 Hash</h3>
+        <div class="hashOutput">
+            <p id="shaResult"></p>
+            <button onclick="copyText('shaResult')">Copy</button>
+        </div>
+
+        <h3>MD5 Hash</h3>
+        <div class="hashOutput">
+            <p id="md5Result"></p>
+            <button onclick="copyText('md5Result')">Copy</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

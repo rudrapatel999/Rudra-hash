@@ -1,0 +1,107 @@
+body{
+    font-family: Arial;
+    background: linear-gradient(to right,#6aaed6,#6ec6e0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Main container */
+.container{
+    background:#f4f4f4;
+    padding:40px;
+    width:650px;
+    border-radius:20px;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Header */
+h1{
+    text-align:center;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    background:linear-gradient(to right,#4a6cf7,#63c7ff);
+}
+
+/* subtitle */
+.subtitle{
+    text-align:center;
+    margin-top:20px;
+}
+
+/* input */
+input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* dropdown */
+select{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* buttons */
+.buttons{
+    margin-top:15px;
+}
+
+.generateBtn{
+    background:linear-gradient(to right,#4a6cf7,#63c7ff);
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.clearBtn{
+    background:#ff5c5c;
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* result section */
+.resultBox{
+    margin-top:30px;
+}
+
+/* hash box */
+.hashOutput{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+}
+
+/* hash text */
+.hashOutput p{
+    font-family:monospace;
+    word-break:break-all;
+    margin:0;
+}
+
+/* copy button */
+.hashOutput button{
+    background:#4CAF50;
+    border:none;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
